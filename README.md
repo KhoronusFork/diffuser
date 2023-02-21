@@ -36,6 +36,9 @@ https://www.roboti.us/license.html
 copy in /home/.mujoco  
 fatal error: GL/osmesa.h: No such file or directory  
 https://github.com/ethz-asl/reinmav-gym/issues/35  
+```
+sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3  
+```
 
 ```
 pip install -e .
