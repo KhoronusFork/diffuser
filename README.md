@@ -25,6 +25,19 @@ Load a pretrained diffusion model and sample from it in your browser with [scrip
 ```
 conda env create -f environment.yml
 conda activate diffuser
+```
+
+***NOTE***  
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html  
+copy in /home/.mujoco  
+https://www.roboti.us/download/mujoco200_linux.zip  
+License key for mujoco200  
+https://www.roboti.us/license.html  
+copy in /home/.mujoco  
+fatal error: GL/osmesa.h: No such file or directory  
+https://github.com/ethz-asl/reinmav-gym/issues/35  
+
+```
 pip install -e .
 ```
 
@@ -258,3 +271,5 @@ To unmount the container, run `sudo umount -f ~/azure_mount; rm -r ~/azure_mount
 
 The diffusion model implementation is based on Phil Wang's [denoising-diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch) repo.
 The organization of this repo and remote launcher is based on the [trajectory-transformer](https://github.com/jannerm/trajectory-transformer) repo.
+
+
